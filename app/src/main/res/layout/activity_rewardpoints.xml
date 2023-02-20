@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbkg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reward Points"
+        android:textColor="@color/grey"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="22sp"
+        android:padding="16dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Total Reward Points:"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="8199"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detailed Reward Points"
+        android:textColor="@color/grey"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="19sp"
+        android:padding="16dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Carry Over:"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7900"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cumulative Points:"
+                    android:padding="10dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@color/grey"
+                    android:text="8199"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reedemed Points:"
+                    android:padding="10dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Balance Points"
+                    android:padding="10dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8199"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+</LinearLayout>

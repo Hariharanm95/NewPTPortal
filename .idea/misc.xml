@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/HARI/AndroidStudioProjects/NewPTPortal/app/src/main/res/drawable/lavender_border.xml" value="0.1" />
+        <entry key="..\:/Users/HARI/AndroidStudioProjects/NewPTPortal/app/src/main/res/layout/activity_login.xml" value="0.1578125" />
+        <entry key="..\:/Users/HARI/AndroidStudioProjects/NewPTPortal/app/src/main/res/layout/activity_main.xml" value="0.2826086956521739" />
+        <entry key="..\:/Users/HARI/AndroidStudioProjects/NewPTPortal/app/src/main/res/layout/activity_signup.xml" value="0.1" />
+        <entry key="..\:/Users/HARI/AndroidStudioProjects/NewPTPortal/app/src/main/res/layout/dialog_forgot.xml" value="0.25" />
+        <entry key="..\:/Users/HARI/Documents/NewPTPortal/app/src/main/res/drawable/back_btn.xml" value="0.1" />
+        <entry key="..\:/Users/HARI/Documents/NewPTPortal/app/src/main/res/drawable/circle_shape.xml" value="0.183" />
+        <entry key="..\:/Users/HARI/Documents/NewPTPortal/app/src/main/res/font/poppins_semibold.xml" value="0.35052083333333334" />
+        <entry key="..\:/Users/HARI/Documents/NewPTPortal/app/src/main/res/layout/activity_academics.xml" value="0.1578125" />
+        <entry key="..\:/Users/HARI/Documents/NewPTPortal/app/src/main/res/layout/activity_biometric.xml" value="0.15628166160081053" />
+        <entry key="..\:/Users/HARI/Documents/NewPTPortal/app/src/main/res/layout/activity_clothing.xml" value="0.1" />
+        <entry key="..\:/Users/HARI/Documents/NewPTPortal/app/src/main/res/layout/activity_discipline.xml" value="0.1578125" />
+        <entry key="..\:/Users/HARI/Documents/NewPTPortal/app/src/main/res/layout/activity_fee.xml" value="0.1578125" />
+        <entry key="..\:/Users/HARI/Documents/NewPTPortal/app/src/main/res/layout/activity_login.xml" value="0.15677083333333333" />
+        <entry key="..\:/Users/HARI/Documents/NewPTPortal/app/src/main/res/layout/activity_main.xml" value="0.125" />
+        <entry key="..\:/Users/HARI/Documents/NewPTPortal/app/src/main/res/layout/activity_signup.xml" value="0.15677083333333333" />
+        <entry key="..\:/Users/HARI/Documents/NewPTPortal/app/src/main/res/layout/activity_skill.xml" value="0.1578125" />
+        <entry key="..\:/Users/HARI/Documents/NewPTPortal/app/src/main/res/layout/activity_student.xml" value="0.11821862348178137" />
+        <entry key="..\:/Users/HARI/Documents/NewPTPortal/app/src/main/res/layout/dialog_forgot.xml" value="0.15677083333333333" />
+        <entry key="..\:/Users/HARI/Documents/NewPTPortal/app/src/main/res/layout/fragment_about.xml" value="0.1578125" />
+        <entry key="..\:/Users/HARI/Documents/NewPTPortal/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/HARI/Documents/NewPTPortal/app/src/main/res/layout/fragment_settings.xml" value="0.1" />
+        <entry key="..\:/Users/HARI/Music/NewPTPortal/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.1" />
+        <entry key="..\:/Users/HARI/Music/NewPTPortal/app/src/main/res/drawable/ic_baseline_key_24.xml" value="0.167" />
+        <entry key="..\:/Users/HARI/Music/NewPTPortal/app/src/main/res/layout/activity_announcement.xml" value="0.3072916666666667" />
+        <entry key="..\:/Users/HARI/Music/NewPTPortal/app/src/main/res/layout/activity_behaviour.xml" value="0.23573200992555832" />
+        <entry key="..\:/Users/HARI/Music/NewPTPortal/app/src/main/res/layout/activity_college.xml" value="0.3753041362530414" />
+        <entry key="..\:/Users/HARI/Music/NewPTPortal/app/src/main/res/layout/activity_help.xml" value="0.3072916666666667" />
+        <entry key="..\:/Users/HARI/Music/NewPTPortal/app/src/main/res/layout/activity_home.xml" value="0.14375" />
+        <entry key="..\:/Users/HARI/Music/NewPTPortal/app/src/main/res/layout/activity_main.xml" value="0.17037037037037037" />
+        <entry key="..\:/Users/HARI/Music/NewPTPortal/app/src/main/res/layout/activity_performance.xml" value="0.3072916666666667" />
+        <entry key="..\:/Users/HARI/Music/NewPTPortal/app/src/main/res/layout/activity_signup.xml" value="0.32135416666666666" />
+        <entry key="..\:/Users/HARI/Music/NewPTPortal/app/src/main/res/layout/activity_student.xml" value="0.32135416666666666" />
+        <entry key="..\:/Users/HARI/Music/NewPTPortal/app/src/main/res/layout/fragment_about.xml" value="0.20108695652173914" />
+        <entry key="..\:/Users/HARI/Music/NewPTPortal/app/src/main/res/layout/fragment_home.xml" value="0.20108695652173914" />
+        <entry key="..\:/Users/HARI/Music/NewPTPortal/app/src/main/res/layout/fragment_settings.xml" value="0.20108695652173914" />
+        <entry key="..\:/Users/HARI/Music/NewPTPortal/app/src/main/res/layout/fragment_share.xml" value="0.20108695652173914" />
+        <entry key="..\:/Users/HARI/Music/NewPTPortal/app/src/main/res/layout/nav_header.xml" value="0.15260416666666668" />
+        <entry key="..\:/Users/HARI/Music/NewPTPortal/app/src/main/res/menu/nav_menu.xml" value="0.15625" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/drawable/back_btn.xml" value="0.1195" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/drawable/feedbacksymbol.xml" value="0.1435" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/drawable/ic_baseline_logout_24.xml" value="0.1435" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/drawable/lavender_border.xml" value="0.1195" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/drawable/lavender_fill.xml" value="0.1195" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/drawable/news.xml" value="0.1435" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/drawable/receive_round_box.xml" value="0.1195" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/drawable/round_button.xml" value="0.1195" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/drawable/send_round_box.xml" value="0.1195" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/activity_academics.xml" value="0.32135416666666666" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/activity_behaviour.xml" value="0.32135416666666666" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/activity_biometric.xml" value="0.32135416666666666" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/activity_chatbot.xml" value="0.15577507598784193" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/activity_contactus.xml" value="0.1" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/activity_discipline.xml" value="0.375" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/activity_fee.xml" value="0.15628166160081053" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/activity_feedback.xml" value="0.1" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/activity_feedback1.xml" value="0.1578125" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/activity_help.xml" value="0.32135416666666666" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/activity_login.xml" value="0.32135416666666666" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/activity_main.xml" value="0.12968299711815562" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/activity_news.xml" value="0.15677083333333333" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/activity_newspdf.xml" value="0.32135416666666666" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/activity_offerletter.xml" value="0.30625" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/activity_performance.xml" value="0.32135416666666666" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/activity_placements.xml" value="0.1" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/activity_rewardpoints.xml" value="0.32135416666666666" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/activity_sem1.xml" value="0.32135416666666666" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/activity_sem2.xml" value="0.32135416666666666" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/activity_signup.xml" value="0.32135416666666666" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/activity_skill.xml" value="0.24864130434782608" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/activity_student.xml" value="0.335" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/dialog_forgot.xml" value="0.32135416666666666" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/fragment_about.xml" value="0.1578125" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/fragment_feedback.xml" value="0.1" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/fragment_home.xml" value="0.24324324324324326" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/fragment_share.xml" value="0.1578125" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/message_item.xml" value="0.32135416666666666" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/layout/nav_header.xml" value="0.1578125" />
+        <entry key="..\:/Users/HARI/Videos/NewPTPortal/app/src/main/res/menu/nav_menu.xml" value="0.1578125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

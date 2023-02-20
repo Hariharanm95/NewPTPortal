@@ -2,14 +2,15 @@ package com.example.newptportal
 
 import android.os.Bundle
 import android.view.MenuItem
-import android.view.Window
-import android.widget.Toast
+import android.content.Intent
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
+import android.content.Context
+
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     private lateinit var drawerLayout: DrawerLayout
@@ -42,14 +43,36 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         when (item.itemId) {
             R.id.nav_home -> supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, HomeFragment()).commit()
-            R.id.nav_settings -> supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, SettingsFragment()).commit()
-            R.id.nav_share -> supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, ShareFragment()).commit()
-            R.id.nav_about -> supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, AboutFragment()).commit()
-            R.id.nav_logout -> Toast.makeText(this, "Logout!", Toast.LENGTH_SHORT).show()
-        }
+            R.id.nav_feedback -> {
+                // start the FeedbackActivity
+                val intent = Intent(this, FeedbackActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.nav_news -> {
+                val intent = Intent(this, NewsActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.nav_contactus -> {
+                val intent = Intent(this, ContactusActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.nav_logout -> {
+                // Clear user session data
+                // You can use any method you prefer to clear the user's session data, such as SharedPreferences, Room, or any other data storage method.
+                // Here's an example of how to use SharedPreferences to clear the user's session data:
+                val sharedPref = getSharedPreferences("myPref", Context.MODE_PRIVATE)
+                with (sharedPref.edit()) {
+                    clear()
+                    apply()
+                }
+
+                // Navigate user to Login activity
+                val intent = Intent(this, LoginActivity::class.java)
+                startActivity(intent)
+
+                // Finish current activity so the user cannot navigate back to it by pressing the back button
+                finish()
+            }        }
         drawerLayout.closeDrawer(GravityCompat.START)
         return true
     }

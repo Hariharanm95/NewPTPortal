@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
+import com.example.newptportal.ui.ChatbotActivity
 
 class HomeFragment : Fragment() {
 
@@ -16,6 +17,9 @@ class HomeFragment : Fragment() {
     private lateinit var academicsCard: CardView
     private lateinit var biometricCard: CardView
     private lateinit var skillsCard: CardView
+    private lateinit var rewardpointsCard: CardView
+    private lateinit var placementsCard: CardView
+    private lateinit var chatbotCard: CardView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -30,6 +34,9 @@ class HomeFragment : Fragment() {
         academicsCard = rootView.findViewById(R.id.academicsCard)
         biometricCard = rootView.findViewById(R.id.biometricCard)
         skillsCard = rootView.findViewById(R.id.skillsCard)
+        rewardpointsCard = rootView.findViewById(R.id.rewardsCard)
+        placementsCard = rootView.findViewById(R.id.placementsCard)
+        chatbotCard = rootView.findViewById(R.id.chatbotCard)
 
         profileCard.setOnClickListener {
             val intent = Intent(this.activity, StudentActivity::class.java)
@@ -53,6 +60,18 @@ class HomeFragment : Fragment() {
         }
         skillsCard.setOnClickListener {
             val intent = Intent(this.activity, SkillActivity::class.java)
+            startActivity(intent)
+        }
+        rewardpointsCard.setOnClickListener {
+            val intent = Intent(this.activity, RewardpointsActivity::class.java)
+            startActivity(intent)
+        }
+        placementsCard.setOnClickListener {
+            val intent = Intent(this.activity, PlacementsActivity::class.java)
+            startActivity(intent)
+        }
+        chatbotCard.setOnClickListener {
+            val intent = Intent(this.activity, ChatbotActivity::class.java)
             startActivity(intent)
         }
 

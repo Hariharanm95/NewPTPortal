@@ -1,21 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/loginbkg"
+    tools:context=".DisciplineActivity"
+    >
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:minHeight="70dp"
+            android:id="@+id/username"
+            android:hint="Your Name"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Discipline Activities"
-        android:textSize="22sp"
-        android:gravity="center"
-        android:padding="16dp"/>
+        <EditText
+            android:id="@+id/feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Feedback"
+            android:minHeight="100dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+        <Button
+            android:layout_width="200sp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Send Feedback"
+            android:onClick="feedbacksent"
+            />
 
-    <ListView
-        android:id="@+id/discipline_list"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
+        <Button
+            android:layout_width="200sp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Read"
+            android:id="@+id/btnread"
+            android:onClick="feedbacksent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nothing to show"
+            android:id="@+id/fb_text"/>
 
 </LinearLayout>
+

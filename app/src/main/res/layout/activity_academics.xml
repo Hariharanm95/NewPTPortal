@@ -1,62 +1,168 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Academics"
-        android:textSize="22sp"
-        android:gravity="center"
-        android:padding="16dp"/>
+    android:background="@drawable/signup"
+    android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Overall Subject Grade:" />
+            android:text="Academics"
+            android:padding="18dp"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
 
-        <TextView
-            android:id="@+id/overall_subject_grade"
+        <TableLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Arrear Details:" />
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CGPA:"
+                    android:padding="15dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8.43"
+                    android:gravity="center"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+            </TableRow>
 
-        <TextView
-            android:id="@+id/arrear_details"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Semester I Result"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <Button
+                    android:layout_width="110dp"
+                    android:layout_height="35dp"
+                    android:text="Click Here!"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:id="@+id/viewsem1"
+                    android:gravity="center"
+                    android:textSize="10dp"/>
+            </TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Arrear Count:" />
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Semester II Result"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <Button
+                    android:layout_width="110dp"
+                    android:layout_height="35dp"
+                    android:text="Click Here!"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:id="@+id/viewsem2"
+                    android:gravity="center"
+                    android:textSize="10dp"/>
+            </TableRow>
 
-        <TextView
-            android:id="@+id/arrear_count"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Semester III Result"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="soon..."
+                    android:gravity="center"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+            </TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Maximum Internal Marks:" />
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arrear Details:"
+                    android:textColor="@color/grey"
+                    android:padding="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Data"
+                    android:gravity="center"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+            </TableRow>
 
-        <TextView
-            android:id="@+id/maximum_internal_marks"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arrear Count:"
+                    android:padding="15dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Overall FA percentage:"
+                    android:padding="15dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="76.3"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+            </TableRow>
+
+
+        </TableLayout>
+
     </LinearLayout>
 
-</LinearLayout>
+</FrameLayout>

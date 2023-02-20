@@ -2,134 +2,250 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/signup"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Biometric Details"
+        android:textColor="@color/grey"
+        android:fontFamily="@font/poppins_semibold"
         android:textSize="22sp"
-        android:gravity="center"
-        android:padding="16dp"/>
+        android:padding="16dp"
+        android:gravity="center"/>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:layout_gravity="center"
+        android:orientation="vertical">
 
-        <TextView
+        <TableLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Biometric Details (Last 30 days):" />
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/biometric_details"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Biometric Details (Last 30 days):"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+            </TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Biometric Attendance %:" />
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biometric Attendance %:"
+                    android:padding="10dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+            </TableRow>
 
-        <TextView
-            android:id="@+id/biometric_attendance_percentage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Hours:"
+                    android:padding="10dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Total Hours:" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:text="50"
+                    android:textColor="@color/grey"
+                    android:textSize="18sp" />
+            </TableRow>
 
-        <TextView
-            android:id="@+id/total_hours"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Days Present:"
+                    android:padding="10dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22.5"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+            </TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Total Days Present:" />
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Days OD:"
+                    android:padding="10dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="@color/grey"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="16sp"/>
+            </TableRow>
 
-        <TextView
-            android:id="@+id/total_days_present"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Days (OD+Present):"
+                    android:padding="10dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="23.5"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+            </TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Total Days OD:" />
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:padding="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Attendance %:"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="94%"
+                    android:gravity="center"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+            </TableRow>
+        </TableLayout>
 
-        <TextView
-            android:id="@+id/total_days_od"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Total Days (OD+Present):" />
-
-        <TextView
-            android:id="@+id/total_days_od_present"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Attendance %:" />
-
-        <TextView
-            android:id="@+id/attendance_percentage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
     </LinearLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Leave Details"
+        android:textColor="@color/grey"
+        android:fontFamily="@font/poppins_semibold"
         android:textSize="22sp"
-        android:gravity="center"
-        android:padding="16dp"/>
+        android:padding="16dp"
+        android:gravity="center"/>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:layout_gravity="center"
+        android:orientation="vertical">
 
-        <TextView
+        <TableLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Total Working Days:" />
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/total_working_days"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Total Working Days:"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+            </TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Total Days Present:" />
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Days Present:"
+                    android:padding="10dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="@color/grey"
+                    android:text="23.5"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+            </TableRow>
 
-        <TextView
-            android:id="@+id/leave_total_days_present"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No of Days Absent:"
+                    android:padding="10dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1.50"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+            </TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="No of Days Absent:" />
 
-        <TextView
-            android:id="@+id/no_of_days_absent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+        </TableLayout>
+
     </LinearLayout>
 </LinearLayout>

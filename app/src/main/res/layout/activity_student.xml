@@ -1,162 +1,272 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:background="@drawable/biometricbkg"
+    android:layout_height="match_parent">
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Student Profile"
-        android:textSize="20sp"
-        android:textStyle="bold"/>
+        android:layout_gravity="center"
+        android:orientation="vertical">
 
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:layout_width="140dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            android:foregroundGravity="center_horizontal">
 
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Roll Number:"
-                android:textSize="18sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="12345"
-                android:textSize="18sp"/>
-        </TableRow>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/student_photo" />
+        </androidx.cardview.widget.CardView>
 
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Student Name:"
-                android:textSize="18sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="John Doe"
-                android:textSize="18sp"/>
-        </TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Profile"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
 
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Branch:"
-                android:textSize="18sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Computer Science"
-                android:textSize="18sp"/>
-        </TableRow>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow>
 
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Batch:"
-                android:textSize="18sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2020-2024"
-                android:textSize="18sp"/>
-        </TableRow>
+            </TableRow>
 
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Official Mail Id:"
-                android:textSize="18sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="johndoe@college.edu"
-                android:textSize="18sp"/>
-        </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Roll Number:"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7376211SE118"
+                    android:padding="5dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+            </TableRow>
 
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Student Mobile:"
-                android:textSize="18sp"/>
-            <TextView            android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="9876543210"
-                android:textSize="18sp"/>
-        </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student Name:"
+                    android:padding="5dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HARIHARAN M"
+                    android:padding="5dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+            </TableRow>
 
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Father Name:"
-                android:textSize="18sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mr. John Smith"
-                android:textSize="18sp"/>
-        </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Branch:"
+                    android:padding="5dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ISE"
+                    android:padding="5dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+            </TableRow>
 
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mother Name:"
-                android:textSize="18sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mrs. Jane Smith"
-                android:textSize="18sp"/>
-        </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Batch:"
+                    android:padding="5dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2021-2025"
+                    android:padding="5dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+            </TableRow>
 
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Address:"
-                android:textSize="18sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1234 Main Street, City, State"
-                android:textSize="18sp"/>
-        </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Official Mail Id:"
+                    android:padding="5dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hariharan.se21@bitsathy.ac.in"
+                    android:textColor="@color/grey"
+                    android:padding="5dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="14sp"/>
+            </TableRow>
 
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Boarding:"
-                android:textSize="18sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Day Scholar"
-                android:textSize="18sp"/>
-        </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student Mobile:"
+                    android:padding="5dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8838360157"
+                    android:padding="5dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+            </TableRow>
 
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hostel/Bus Details:"
-                android:textSize="18sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="N/A"
-                android:textSize="18sp"/>
-        </TableRow>
 
-    </TableLayout>
-</LinearLayout>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:padding="5dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Boarding:"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hosteller"
+                    android:padding="5dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hostel/Bus Details:"
+                    android:padding="5dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="N/A"
+                    android:textSize="18sp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mentor Name:"
+                    android:padding="5dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="PREETHA R"
+                    android:textSize="18sp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mentor Number:"
+                    android:padding="5dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="8746542698"
+                    android:textSize="18sp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Warden Name:"
+                    android:padding="5dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="GUNALAN K"
+                    android:textSize="18sp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mentor Name:"
+                    android:padding="5dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="7856450957"
+                    android:textSize="18sp"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</ScrollView>
