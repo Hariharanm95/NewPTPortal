@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import com.example.newptportal.ui.ChatbotActivity
+import com.daimajia.androidanimations.library.Techniques
+import com.daimajia.androidanimations.library.YoYo
 
 class HomeFragment : Fragment() {
 
@@ -37,6 +39,52 @@ class HomeFragment : Fragment() {
         rewardpointsCard = rootView.findViewById(R.id.rewardsCard)
         placementsCard = rootView.findViewById(R.id.placementsCard)
         chatbotCard = rootView.findViewById(R.id.chatbotCard)
+
+        YoYo.with(Techniques.SlideInLeft)
+            .duration(2000)
+            .repeat(0)
+            .playOn(profileCard)
+
+        YoYo.with(Techniques.SlideInRight)
+            .duration(2000)
+            .repeat(0)
+            .playOn(feeCard);
+
+        YoYo.with(Techniques.SlideInLeft)
+            .duration(2000)
+            .repeat(0)
+            .playOn(disciplineCard);
+
+        YoYo.with(Techniques.SlideInRight)
+            .duration(2000)
+            .repeat(0)
+            .playOn(academicsCard);
+
+        YoYo.with(Techniques.SlideInLeft)
+            .duration(2000)
+            .repeat(0)
+            .playOn(biometricCard);
+
+        YoYo.with(Techniques.SlideInRight)
+            .duration(2000)
+            .repeat(0)
+            .playOn(skillsCard);
+
+        YoYo.with(Techniques.SlideInLeft)
+            .duration(2000)
+            .repeat(0)
+            .playOn(rewardpointsCard);
+
+        YoYo.with(Techniques.SlideInRight)
+            .duration(2000)
+            .repeat(0)
+            .playOn(placementsCard);
+
+        YoYo.with(Techniques.Shake)
+            .duration(2000)
+            .repeat(0)
+            .playOn(chatbotCard);
+
 
         profileCard.setOnClickListener {
             val intent = Intent(this.activity, StudentActivity::class.java)

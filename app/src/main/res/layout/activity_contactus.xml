@@ -7,109 +7,11 @@
     android:layout_gravity="center"
     android:background="@drawable/loginbkg">
 
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Contact Us"
-        android:textColor="@color/grey"
-        android:fontFamily="@font/poppins_semibold"
-        android:textSize="22sp"
-        android:padding="16dp"
-        android:gravity="center"/>
+    </WebView>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="vertical">
-
-        <TableLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TableRow>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="10dp"
-                    android:text="Address:"
-                    android:textColor="@color/grey"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:textSize="18sp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Sathyamangalam, Erode , Tamil Nadu, India"
-                    android:gravity="center"
-                    android:padding="40dp"
-                    android:textColor="@color/grey"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:textSize="11sp"/>
-            </TableRow>
-
-            <TableRow>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Phone"
-                    android:padding="10dp"
-                    android:textColor="@color/grey"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:textSize="18sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:padding="10dp"
-                    android:text="+91 4295 226000"
-                    android:gravity="center"
-                    android:textColor="@color/grey"
-                    android:textSize="18sp" />
-            </TableRow>
-
-            <TableRow>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Email:"
-                    android:padding="10dp"
-                    android:textColor="@color/grey"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:textSize="18sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="66dp"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:gravity="center"
-                    android:padding="10dp"
-                    android:text="stayahead[at]bitsathy.ac.in"
-                    android:textColor="@color/grey"
-                    android:textSize="18sp" />
-            </TableRow>
-            <TableRow>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Admission"
-                    android:padding="10dp"
-                    android:textColor="@color/grey"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:textSize="18sp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="admissions[at]bitsathy.ac.in"
-                    android:gravity="center"
-                    android:padding="10dp"
-                    android:textColor="@color/grey"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:textSize="18sp"/>
-            </TableRow>
-
-        </TableLayout>
-
-    </LinearLayout>
 </LinearLayout>

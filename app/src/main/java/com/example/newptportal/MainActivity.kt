@@ -1,25 +1,47 @@
 package com.example.newptportal
 
+
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
-import android.content.Intent
+import android.widget.TextView
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.material.navigation.NavigationView
-import android.content.Context
+import com.google.firebase.auth.FirebaseAuth
 
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     private lateinit var drawerLayout: DrawerLayout
+    private lateinit var auth: FirebaseAuth
+    lateinit var mGoogleSignInClient: GoogleSignInClient
+    private lateinit var gOptions: GoogleSignInOptions
+    private lateinit var gClient: GoogleSignInClient
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
+        drawerLayout = findViewById(R.id.drawer_layout)
+
+        auth = FirebaseAuth.getInstance()
+        gOptions = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+            .requestEmail()
+            .build()
+        gClient = GoogleSignIn.getClient(this, gOptions)
+
+        val email = intent.getStringExtra("email")
+        val displayName = intent.getStringExtra("name")
+
+        val headerView = findViewById<NavigationView>(R.id.nav_view).getHeaderView(0)
+        headerView.findViewById<TextView>(R.id.textView).text = "$email\n$displayName"
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
@@ -44,7 +66,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_home -> supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, HomeFragment()).commit()
             R.id.nav_feedback -> {
-                // start the FeedbackActivity
                 val intent = Intent(this, FeedbackActivity::class.java)
                 startActivity(intent)
             }
@@ -57,25 +78,23 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 startActivity(intent)
             }
             R.id.nav_logout -> {
-                // Clear user session data
-                // You can use any method you prefer to clear the user's session data, such as SharedPreferences, Room, or any other data storage method.
-                // Here's an example of how to use SharedPreferences to clear the user's session data:
-                val sharedPref = getSharedPreferences("myPref", Context.MODE_PRIVATE)
-                with (sharedPref.edit()) {
-                    clear()
-                    apply()
-                }
+                FirebaseAuth.getInstance().signOut()
+                startActivity(Intent(this@MainActivity, LoginActivity::class.java))
+                signout()
+            }
 
-                // Navigate user to Login activity
-                val intent = Intent(this, LoginActivity::class.java)
-                startActivity(intent)
-
-                // Finish current activity so the user cannot navigate back to it by pressing the back button
-                finish()
-            }        }
+        }
         drawerLayout.closeDrawer(GravityCompat.START)
         return true
     }
+
+    private fun signout() {
+        gClient.signOut().addOnCompleteListener(this) { task ->
+            finish()
+            startActivity(Intent(this@MainActivity, LoginActivity::class.java))
+        }
+    }
+
 
     override fun onBackPressed() {
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
